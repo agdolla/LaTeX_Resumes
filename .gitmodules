@@ -1,0 +1,9 @@
+[submodule "Awesome-CV"]
+	path = Awesome-CV
+	url = https://github.com/posquit0/Awesome-CV.git
+[submodule "Deedy-Resume"]
+	path = Deedy-Resume
+	url = https://github.com/deedy/Deedy-Resume
+[submodule "Jan-Collection"]
+	path = Jan-Collection
+	url = https://github.com/jankapunkt/latexcv
