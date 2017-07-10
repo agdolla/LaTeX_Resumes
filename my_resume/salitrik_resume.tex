@@ -16,7 +16,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 = a4paper, Letter = letterpaper
-\documentclass[12pt, letterpaper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 % Default page margins:
 % \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -47,7 +47,10 @@
 \definecolor{lighttext}{HTML}{111111}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
+\setbool{acvEntryHighlight}{false}
+\setbool{acvPositionHighlight}{true}
+
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -63,9 +66,9 @@
 \position{Software Engineer{\enskip\cdotp\enskip}Electromechanical Engineer}
 \address{ADDRESS}
 
-\mobile{PHONE}
-\email{EMAIL}
-\homepage{devpost.com/NullFragment}
+\mobile{+(00)000-000-0000}
+\email{xxxxxxxxx@gmail.com}
+%\homepage{}
 \github{NullFragment}
 \linkedin{ksalitrik}
 % \gitlab{gitlab-id}
@@ -97,11 +100,11 @@
 \input{resume/projects.tex}
 \vspace{-1em}
 \input{resume/certifications.tex}
-\vspace{-.75em}
+\vspace{-1em}
 \input{resume/memberships.tex}
-\newpage
-\input{resume/comparison_edu.tex}
-\input{resume/comparison_experience.tex}
+%\newpage
+%\input{resume/comparison_edu.tex}
+%\input{resume/comparison_experience.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
