@@ -47,7 +47,7 @@
 \definecolor{lighttext}{HTML}{111111}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{true}
 \setbool{acvEntryHighlight}{false}
 \setbool{acvPositionHighlight}{true}
 
@@ -73,6 +73,27 @@
 % \gitlab{gitlab-id}
 \stackoverflow{789504}{NullFragment}
 
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {ToWhomItMayConcern}
+  {Company\\Address1\\Address2}
+% The date on the letter, default is the date of compilation
+\letterdate{}
+% The title of the letter
+\lettertitle{Job Application for Position}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr.,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Résumé}
+
+
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -83,27 +104,36 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-{}%\today}
-{Kyle P. Salitrik~~~·~~~Résumé}
-{}%\thepage}
+  {}
+  {Kyle P. Salitrik~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+\quad I attended Penn State for Engineering Science with a minor in Engineering Mechanics, but was unable to finish my degree due to financial reasons. I then worked as an Electromechanical Engineer for two years designing hardware testing systems and vibration testing fixtures. During this time I found out that I enjoy programming and software development and decided that I would like to pursue a career in the industry. While I was employed I completed my degree requirements independently and decided to return to school for a second degree.
+
+\quad My current plan is to graduate in Fall 2017 and begin a Master's program in Computer Science and Engineering with a focus on Machine Learning and Artificial Intelligence starting Fall 2018.
+
+\lettersection{Why Company?}
+\quad Because stuff.
+
+\lettersection{Why Me?}
+\quad I am eager \& willing to learn new skills and adapt to the requirements of a professional environment quickly. During my previous employment, I was initially hired as an Electrical Engineer despite having a limited background in the subject. I individually designed several hardware and software for test fixtures utilizing microprocessors to automate hardware testing as well as headed the design of a signal-routing chassis as part of a test station.
+
+\quad Following this project, the company's Principal Mechanical Engineer hand picked me to aid in designing modular truss structures for rapid deployment on, vibration fixtures for rack-mounted servers, and the modeling of a light-weight, modular shipping container proposal.
+
+\end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{resume/experience.tex}
-\vspace{-1em}
-\input{resume/projects.tex}
-\vspace{-1em}
-\input{resume/education.tex}
-\vspace{-1em}
-\input{resume/certifications.tex}
-\vspace{-1em}
-\input{resume/memberships.tex}
-%\newpage
-%\input{resume/comparison_edu.tex}
-%\input{resume/comparison_experience.tex}
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
 
-%-------------------------------------------------------------------------------
 \end{document}
