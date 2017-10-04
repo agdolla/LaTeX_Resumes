@@ -1,0 +1,142 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 = a4paper, Letter = letterpaper
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Default page margins:
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\geometry{left=1.5cm, top=.75cm, right=1.25cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+% Custom Awesome Colors: awesome-midnight, awesome-lunar, awesome-sapphire, awesome-blue,
+%						 awesome-deepemerald, awesome-pitchblack
+\colorlet{awesome}{awesome-midnight}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+\definecolor{darktext}{HTML}{111111}
+\definecolor{text}{HTML}{111111}
+\definecolor{graytext}{HTML}{111111}
+\definecolor{lighttext}{HTML}{111111}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+\setbool{acvEntryHighlight}{false}
+\setbool{acvPositionHighlight}{true}
+
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Kyle Patrick}{Salitrik}
+\position{Programmer{\enskip\cdotp\enskip}Electromechanical Engineer}
+\address{ADDRESS}
+\mobile{+(00)000-000-0000}
+\email{xxxxxxxxx@gmail.com}
+%\homepage{}
+\github{NullFragment}
+\linkedin{ksalitrik}
+% \gitlab{gitlab-id}
+\stackoverflow{789504}{NullFragment}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company}
+  {Address1\\Address2 \vspace{-3em}}
+% The date on the letter, default is the date of compilation
+\letterdate{}
+% The title of the letter
+\lettertitle{Job Application for Position}
+% How the letter is opened
+\letteropening{To Whom It May Concern,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Résumé}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {Kyle P. Salitrik~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+\quad I attended Penn State studying Engineering Science with a minor in Engineering Mechanics, but was unable to finish my degree due to financial reasons. I was hired into a full time position as an Electromechanical Engineer and during this time worked with several professors to finish my degree requirements independently. I worked for two years in that position designing and programming hardware testing systems, modeling 3-axis vibration test fixtures and truss structures. It was during this experience that I gained an appreciation for programming and software development and decided that I would like to pursue a career in the industry, so I returned to Penn State in order to gain the underlying knowledge in Computer Science to pursue a master's degree.
+
+\lettersection{Why the gaming industry?}
+\quad The reason that I want to work in the gaming industry is because, as far as I can remember, gaming has been a significant part of my life. Games offer a way for people to have experiences they wouldn't normally have, teach the weight of moral decisions, allow people to understand the consequences of their actions, and most importantly bring people together in person or online and create lasting friendships. Games have helped shape who I am today and I would love to be part of that experience for others.
+
+\lettersection{Why Company?}
+\quad Because stuff.
+
+
+
+\lettersection{Why Me?}
+\quad I am eager \& willing to learn new skills and adapt to the requirements of a professional environment quickly. During my previous employment, I was initially hired as an Electrical Engineer despite having a limited background in the subject. I individually designed several hardware and software for test fixtures utilizing microprocessors to automate hardware testing as well as headed the design of a signal-routing chassis as part of a test station.
+
+\quad Following this project, the company's Principal Mechanical Engineer hand picked me to aid in designing modular truss structures for rapid deployment on, vibration fixtures for rack-mounted servers, and the modeling of a light-weight, modular shipping container proposal.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
