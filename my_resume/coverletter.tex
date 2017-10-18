@@ -81,17 +81,17 @@
 % The company being applied to
 \recipient
   {Company}
-  {Address1\\Address2 \vspace{-3em}}
+  {Address \\ Address \vspace{-3em}}
 % The date on the letter, default is the date of compilation
 \letterdate{}
 % The title of the letter
 \lettertitle{Job Application for Position}
 % How the letter is opened
-\letteropening{To Whom It May Concern,}
+\letteropening{To Whom It May Concern,\vspace{-1em}}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Résumé}
+%\letterenclosure[Attached]{Résumé}
 
 
 %-------------------------------------------------------------------------------
@@ -100,7 +100,7 @@
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[C]
-
+\vspace{-1em}
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
@@ -117,20 +117,20 @@
 \begin{cvletter}
 
 \lettersection{About Me}
-\quad I attended Penn State studying Engineering Science with a minor in Engineering Mechanics, but was unable to finish my degree due to financial reasons. I was hired into a full time position as an Electromechanical Engineer and during this time worked with several professors to finish my degree requirements independently. I worked for two years in that position designing and programming hardware testing systems, modeling 3-axis vibration test fixtures and truss structures. It was during this experience that I gained an appreciation for programming and software development and decided that I would like to pursue a career in the industry, so I returned to Penn State in order to gain the underlying knowledge in Computer Science to pursue a master's degree.
+\quad I attended Penn State studying Engineering Science with a minor in Engineering Mechanics, but was unable to finish my degree at that time due to financial difficulties. Afterwards, I obtained a position as an Electromechanical Engineer at a company that I previously interned for. During my employment, I worked with several professors to finish my undergraduate capstone thesis in my spare time. It was through this experience that I gained an appreciation for programming and software development, and decided that I would like to pursue a career in the industry.
+
+\quad I returned to Penn State in order to gain the underlying knowledge in Computer Science to pursue a master's degree. Due to the heavy background I had in Mathematics and Linear Algebra (including Master's level Math courses) from Engineering, AI and algorithm development caught my attention. Currently, I am working as an Undergraduate Research Intern for a team dealing with path prediction algorithms while attending school.
 
 \lettersection{Why the gaming industry?}
-\quad The reason that I want to work in the gaming industry is because, as far as I can remember, gaming has been a significant part of my life. Games offer a way for people to have experiences they wouldn't normally have, teach the weight of moral decisions, allow people to understand the consequences of their actions, and most importantly bring people together in person or online and create lasting friendships. Games have helped shape who I am today and I would love to be part of that experience for others.
+\quad The reasons I am pursuing a career in the gaming industry are that, as far as I can remember, gaming has been a significant part of my life. Games offer a way for people to have experiences they wouldn't normally have, teach the weight of moral decisions, allow people to understand the consequences of their actions, and most importantly bring people together in person or online and create lasting friendships. Games have helped shape who I am today and I would love to be part of that experience for others.
 
 \lettersection{Why Company?}
-\quad Because stuff.
-
-
+\quad Because stuff
 
 \lettersection{Why Me?}
-\quad I am eager \& willing to learn new skills and adapt to the requirements of a professional environment quickly. During my previous employment, I was initially hired as an Electrical Engineer despite having a limited background in the subject. I individually designed several hardware and software for test fixtures utilizing microprocessors to automate hardware testing as well as headed the design of a signal-routing chassis as part of a test station.
+\quad I am eager \& willing to learn new skills and adapt to the requirements of a professional environment quickly. During my previous employment, I was initially hired as an Electrical Engineer despite taking a single course in the subject. I individually developed hardware and software for several test fixtures utilizing microprocessors to automate hardware testing as well as headed the design of a signal-routing chassis as part of a test station.
 
-\quad Following this project, the company's Principal Mechanical Engineer hand picked me to aid in designing modular truss structures for rapid deployment on, vibration fixtures for rack-mounted servers, and the modeling of a light-weight, modular shipping container proposal.
+\quad Following this project, the company's Principal Mechanical Engineer hand picked me to aid in designing modular truss structures for rapid deployment on naval ships, vibration fixtures for rack-mounted servers, and the modeling of a light-weight, modular shipping container for a project proposal.
 
 \end{cvletter}
 
